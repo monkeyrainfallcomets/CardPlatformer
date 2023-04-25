@@ -10,6 +10,4 @@ public class Card : MonoBehaviour
     public string Name { get; }
     string description;
     public string Description { get; }
-
-
 }

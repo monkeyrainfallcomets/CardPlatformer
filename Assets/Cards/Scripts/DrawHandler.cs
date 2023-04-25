@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class DrawHandler
 {
-    Deck drawPile;
+    DrawPile drawPile;
     Deck discardPile;
     bool refillDrawPile;
 
-    DrawHandler(Deck drawPile, bool refillDrawPile, int capacity)
+    DrawHandler(DrawPile drawPile, bool refillDrawPile, int capacity)
     {
         this.drawPile = drawPile;
         this.discardPile = new Deck(capacity);
     }
 
-    public Card DrawTopCard()
+    public RunnableCard DrawTopCard()
     {
         //impliment drawPileEmpty check
         return drawPile.DrawTopCard();

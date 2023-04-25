@@ -19,4 +19,9 @@ public class RunnableCard
             card.Actions[i].RunAction(handler);
         }
     }
+
+    public Card GetCard()
+    {
+        return card;
+    }
 }

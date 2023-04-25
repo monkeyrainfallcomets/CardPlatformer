@@ -2,7 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CardHandler
+public class CardHandler : MonoBehaviour
 {
-    //this class will deal with a drawHandler and a hand object
+    Hand hand;
+    DrawHandler drawHandler;
+
+
+    public void SetDeck(DrawHandler drawHandler, Hand hand)
+    {
+        this.drawHandler = drawHandler;
+        this.hand = hand;
+    }
 }
